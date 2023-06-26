@@ -1,4 +1,5 @@
 import streamlit as st
+import os
 
 
 st.header("Fighting Insurance Fraud")
@@ -18,3 +19,6 @@ email = login_form.text_input(label='Email')
 password = login_form.text_input(label='Password')
 
 submit_button = login_form.form_submit_button(label='Log in')
+
+if password == st.secrets["password"]:
+    print("Yea, you are logged in")
