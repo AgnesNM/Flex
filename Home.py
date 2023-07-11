@@ -1,5 +1,8 @@
+#entrypoint module/file
+
 import streamlit as st
-import os
+
+from streamlit.components.v1 import html
 
 
 st.header("Fighting Insurance Fraud")
@@ -20,5 +23,9 @@ password = login_form.text_input(label='Password')
 
 submit_button = login_form.form_submit_button(label='Log in')
 
+#redirect
+
 if password == st.secrets["password"]:
-    print("Yea, you are logged in")
+    st.write("You are logged in!")
+    st.markdown('<a href="/Data" target=_top>Data</a>', unsafe_allow_html=True)
+
