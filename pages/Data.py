@@ -10,6 +10,10 @@ st.write("The following data is derived from the Iris dataset. It is a Pandas Da
 
 # Load dataset
 iris = datasets.load_iris()
+# print(iris.data.shape)
+
+st.write("Here is the shape of the Iris dataset: ")
+st.write(iris.data.shape)
 
 #create a Pandas DataFrame to store the data from the Iris dataset
 # the iris.data array is the data rows
