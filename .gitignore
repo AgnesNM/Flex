@@ -1,4 +1,6 @@
 .streamlit_env
 .streamlit
 
+#check whether my environment variables should be strings
+
 secrets.toml
