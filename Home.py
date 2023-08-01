@@ -5,27 +5,37 @@ import streamlit as st
 from streamlit.components.v1 import html
 
 
-st.header("Fighting Insurance Fraud")
+st.header("Flexie - Fighting Insurance Fraud")
 st.subheader("""
 
-Using ML to identify and prevent insurance fraud
+We are using ML to identify and prevent insurance fraud
 
 """
 )
 
-#create a form
+st.write("Welcome to Flexie. Flexie is an Insurtech product that attempts to detect fraud in insurance.") 
+st.write("Our main target is insurance companies.")       
+st.write("This is an MVP to demo our idea. We are willing to have a conversation for customized solutions")
 
-login_form = st.form (key = "login_form")
+st.header("Flexie - Future Versions")
 
-name = login_form.text_input(label='Name')
-email = login_form.text_input(label='Email')
-password = login_form.text_input(label='Password')
+st.write("We are looking into an API and customer specific solutions")
+              
 
-submit_button = login_form.form_submit_button(label='Log in')
 
-#redirect
+# #create a form
 
-if password == st.secrets["password"]:
-    st.write("You are logged in!")
-    st.markdown('<a href="/Data" target=_top>Data</a>', unsafe_allow_html=True)
+# login_form = st.form (key = "login_form")
+
+# name = login_form.text_input(label='Name')
+# email = login_form.text_input(label='Email')
+# password = login_form.text_input(label='Password')
+
+# submit_button = login_form.form_submit_button(label='Log in')
+
+# #redirect
+
+# if password == st.secrets["password"]:
+#     st.write("You are logged in!")
+#     st.markdown('<a href="/Data" target=_top>Data</a>', unsafe_allow_html=True)
 
